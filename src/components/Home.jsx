@@ -1,7 +1,7 @@
 const Home = () => {
     return(
         <section className="m-5">
-            <p>Cafe</p>
+            <p>Cafe Shop</p>
         </section>
     )
 }
