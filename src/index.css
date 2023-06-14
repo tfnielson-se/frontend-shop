@@ -4,13 +4,16 @@
 
 :root {
     background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
-    height: 100vh;
-    width: 100vw;
+    
 }
 
-section {
+main {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+/* div, section {
     border-width: 1px;
     border-color: white;
     border-radius: 0.5em;
     padding: 0.1em
-}
+} */
