@@ -6,7 +6,8 @@ import NavBar from "./components/NavBar";
 import MobileNavBar from "./components/MobileNavBar";
 import Footer from "./components/Footer";
 import About from "./components/About";
-
+import Menu from "./components/Menu";
+import _ from 'lodash'
 function App() {
 	return (
 		<main className="flex flex-col">
@@ -22,6 +23,7 @@ function App() {
 				<Routes>
 					<Route exact path="/" element={<Home />} />
 					<Route exact path="/about" element={<About />} />
+                    <Route exact path="/menu" element={<Menu />} />
 				</Routes>
 			</div>
 			<div className="flex-none lg:m-5">

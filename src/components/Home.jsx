@@ -1,10 +1,13 @@
 import cafeImg from "../public/cafe.jpg";
-import {BsTsunami} from 'react-icons/bs'
+
+// strecth goal
+import WaveCast from "./WaveCast"; 
+
 const Home = () => {
 	return (
         <>
 		<section className="flex flex-col lg:flex-row lg:h-96">
-			<div className="w-full lg:w-2/3 p-5 lg:border-4 border-green-400 rounded-sm shadow-xl m-auto">
+			<div className="w-full lg:w-2/3 p-5 lg:border-4 rounded-sm shadow-xl m-auto">
 				<p className="tracking-widest leading-loose text-xl">
 					Welcome to{" "}
 					<span className="title border-b-2 border-l-2 px-1 border-yellow-300">
@@ -21,16 +24,12 @@ const Home = () => {
 				<img
 					src={cafeImg}
 					alt="coffee image"
-					className="lg:rounded-sm lg:h-96 border-8"
+					className="lg:rounded-sm lg:h-96"
 				/>
 			</div>
 		</section>
-        <div className="flex m-5 lg:h-24 border-4 rounded-sm">
-            <p className="text-3xl">
-                <BsTsunami/>
-                Wave Cast
-            </p>
-        </div>
+
+        {/* <WaveCast/> */}
             </>
 	);
 };
