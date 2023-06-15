@@ -10,7 +10,7 @@ import About from "./components/About";
 function App() {
 	return (
 		<main className="flex flex-col">
-			<div className="hidden lg:flex-none m-5">
+			<div className="hidden lg:grid lg:flex-none">
 				<NavBar />
 				<hr className="border-stone-600"></hr>
 			</div>
@@ -24,7 +24,7 @@ function App() {
 					<Route exact path="/about" element={<About />} />
 				</Routes>
 			</div>
-			<div className="flex-none m-5">
+			<div className="flex-none lg:m-5">
 				<hr className="border-stone-600"></hr>
 				<Footer />
 			</div>

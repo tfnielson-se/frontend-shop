@@ -11,6 +11,10 @@ main {
     min-width: 100vw;
     min-height: 100vh;
 }
+
+.title {
+    font-family: 'Monoton', cursive;
+}
 /* div, section {
     border-width: 1px;
     border-color: white;
