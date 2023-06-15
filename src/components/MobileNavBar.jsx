@@ -18,7 +18,9 @@ const MobileNavBar = () => {
 	return (
 		<nav className="flex justify-between my-1">
 			<div className="flex justify-around text-3xl m-1 border-b-2 border-l-2 border-stone-900 p-1 title">
+                <Link to="/">
 				<p>CaféOle!</p><p className="p-1"></p>
+                </Link>
 
 			</div>
 			{hideMobileMenu ? (
@@ -30,13 +32,10 @@ const MobileNavBar = () => {
 			) : (
 				<div onClick={closeMobileMenu} className="flex w-full justify-around">
 					<div>
-						<Link to="/">Home</Link>
-					</div>
-					<div>
 						<Link to="/about">About</Link>
 					</div>
 					<div>
-						<Link>Menu</Link>
+                    <Link to="/menu">Menu</Link>
 					</div>
 				</div>
 			)}

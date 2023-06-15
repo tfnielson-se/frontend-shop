@@ -1,8 +1,8 @@
 const Menu = () => {
     return(
-        <section className="m-5">
-            <div className="bg-gray-200">
-                CAFES
+        <section className="m-5 menu rounded-xl">
+            <div className="">
+                
             </div>
         </section>
     )

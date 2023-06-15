@@ -14,7 +14,7 @@ const NavBar = () => {
 					<Link to="/about">About</Link>
 				</div>
 				<div className="border-b border-gray-500 px-2">
-					<Link>Menu</Link>
+					<Link to="/menu">Menu</Link>
 				</div>
 			</div>
 		</nav>
