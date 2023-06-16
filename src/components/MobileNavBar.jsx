@@ -31,9 +31,9 @@ const MobileNavBar = () => {
                 </div>    
                 
 			) : (
-				<div onClick={closeMobileMenu} className="flex justify-around text-xl m-1 border-t-2 border-r-2 border-stone-900 p-1 w-1/3">
+				<div onClick={closeMobileMenu} className="flex justify-center text-xl m-1 border-t-2 border-r-2 border-stone-900 p-1 w-1/3">
 					<div >
-                    <Link to="/menu">Cafe Menu</Link>
+                    <Link to="/menu" className="text-3xl m-auto">Menu</Link>
 					</div>
 				</div>
 			)}
