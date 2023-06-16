@@ -49,9 +49,24 @@ main {
 .font-fourth-color { 
 	color: #bb5a5a; 
 }
-div, section {
+
+.bring-up {
+	opacity: 95%;
+
+	/* box-shadow: 8px 8px 0px 0px #ff5f5f; */
+
+	transition: all 0.3s ease-out;
+}
+.bring-up:hover {
+	opacity: 100%;
+	filter: drop-shadow(0 30px 15px rgba(0, 0, 0, 0.288))
+		drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+	box-shadow: 0px 0px 0px 3px #e6dcdc;
+	/* box-shadow: 12px 12px 2px 1px #f3818165; */
+}
+/* div, section {
     border-width: 1px;
     border-color: white;
     border-radius: 0.5em;
     padding: 0.1em
-}
+} */

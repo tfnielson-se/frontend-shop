@@ -1,4 +1,6 @@
 import cafeImg from "../public/lounge.jpg";
+import { motion, AnimatePresence } from "framer-motion";
+
 
 // strecth goal
 import WaveCast from "./WaveCast"; 
@@ -6,6 +8,13 @@ import WaveCast from "./WaveCast";
 const Home = () => {
 	return (
         <>
+        <AnimatePresence>
+        <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 15 }}
+            transition={{ delay: 0.25 }}
+        >
 		<section className="flex flex-col lg:flex-row lg:h-96">
 			<div className="w-full lg:w-2/3 p-5 lg:border-4 rounded-sm shadow-xl m-auto">
 				<p className="tracking-widest leading-loose text-xl">
@@ -28,7 +37,8 @@ const Home = () => {
 				/>
 			</div>
 		</section>
-
+        </motion.div>
+			</AnimatePresence>
         {/* <WaveCast/> */}
             </>
 	);

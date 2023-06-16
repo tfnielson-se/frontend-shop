@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Menu from "./components/Menu";
 import _ from 'lodash'
+
 function App() {
 	return (
 		<main className="flex flex-col">

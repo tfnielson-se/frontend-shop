@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 import {BiCoffeeTogo} from 'react-icons/bi';
+import {GiHamburgerMenu} from 'react-icons/gi'
 
 const MobileNavBar = () => {
 	const [hideMobileMenu, setHideMobileMenu] = useState(true);
@@ -24,18 +25,15 @@ const MobileNavBar = () => {
 
 			</div>
 			{hideMobileMenu ? (
-                <div onClick={handleOpenMobileMenu} className="flex justify-around text-2xl m-1 border-t-2 border-r-2 border-stone-900 p-1">
-					<button  className="text-4xl"><BiCoffeeTogo/></button>
-                    <p className="m-auto">Menu</p>
+                <div onClick={handleOpenMobileMenu} className="flex justify-around text-2xl m-1 border-t-2 border-r-2 border-stone-900 p-1 w-1/3">
+                    <p className="m-auto"><GiHamburgerMenu/></p>
+					<p  className="text-4xl"><BiCoffeeTogo/></p>
                 </div>    
                 
 			) : (
-				<div onClick={closeMobileMenu} className="flex w-full justify-around">
-					<div>
-						<Link to="/about">About</Link>
-					</div>
-					<div>
-                    <Link to="/menu">Menu</Link>
+				<div onClick={closeMobileMenu} className="flex justify-around text-xl m-1 border-t-2 border-r-2 border-stone-900 p-1 w-1/3">
+					<div >
+                    <Link to="/menu">Cafe Menu</Link>
 					</div>
 				</div>
 			)}
