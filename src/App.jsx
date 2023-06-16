@@ -1,12 +1,11 @@
-import { useState, useEffect } from "react";
+
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/home";
+import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import MobileNavBar from "./components/MobileNavBar";
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
-import _ from 'lodash'
 
 function App() {
 
