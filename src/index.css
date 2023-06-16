@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 :root {
-    background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
-    
-}
+    background: radial-gradient(859px at 10% 20%, rgb(245, 220, 154) 0%, rgb(164, 78, 51) 90%);}
 
 main {
     min-width: 100vw;
@@ -17,11 +15,43 @@ main {
 }
 
 .menu {
-    background: radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, rgb(250, 178, 172) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);
+    background: radial-gradient(rgb(221, 221, 221) 0%, rgb(110, 136, 161) 100%);
 }
-/* div, section {
+
+.first-color { 
+	background: #f2e9d0; 
+}
+	
+.second-color { 
+	background: #eaceb4; 
+}
+
+.third-color { 
+	background: #e79e85; 
+}
+
+.fourth-color { 
+	background: #bb5a5a; 
+}
+
+.font-first-color { 
+	color: #f2e9d0; 
+}
+	
+.font-second-color { 
+	color: #eaceb4; 
+}
+
+.font-third-color { 
+	color: #e79e85; 
+}
+
+.font-fourth-color { 
+	color: #bb5a5a; 
+}
+div, section {
     border-width: 1px;
     border-color: white;
     border-radius: 0.5em;
     padding: 0.1em
-} */
+}

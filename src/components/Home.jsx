@@ -1,4 +1,4 @@
-import cafeImg from "../public/cafe.jpg";
+import cafeImg from "../public/lounge.jpg";
 
 // strecth goal
 import WaveCast from "./WaveCast"; 
@@ -24,7 +24,7 @@ const Home = () => {
 				<img
 					src={cafeImg}
 					alt="coffee image"
-					className="lg:rounded-sm lg:h-96"
+					className="object-cover lg:w-2/3 lg:rounded-xl opacity-80"
 				/>
 			</div>
 		</section>

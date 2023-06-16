@@ -26,7 +26,7 @@ const MobileNavBar = () => {
 			{hideMobileMenu ? (
                 <div onClick={handleOpenMobileMenu} className="flex justify-around text-2xl m-1 border-t-2 border-r-2 border-stone-900 p-1">
 					<button  className="text-4xl"><BiCoffeeTogo/></button>
-                    <p>Menu</p>
+                    <p className="m-auto">Menu</p>
                 </div>    
                 
 			) : (
