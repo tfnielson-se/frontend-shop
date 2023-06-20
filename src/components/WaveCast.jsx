@@ -3,7 +3,7 @@ import { BsTsunami } from "react-icons/bs";
 import _ from "lodash";
 
 const WaveCast = ({ forecast }) => {
-	forecast === undefined ? console.log("nada") : console.log(forecast);
+
 	return (
 		<>
 			{forecast === undefined ? (
@@ -17,6 +17,9 @@ const WaveCast = ({ forecast }) => {
                         <div>
 						<p className="text-xl m-auto">
 							📆 Date: {forecast.time[0]}
+						</p>
+                        <p className="text-xl m-auto">
+							📍 Location: Wrightsville Beach, NC
 						</p>
 						<p className="text-xl m-auto">
 							🌊 Swell Max: {forecast.swell_wave_height_max[0]} ft

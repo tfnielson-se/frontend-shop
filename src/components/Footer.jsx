@@ -6,7 +6,7 @@ const Footer = () => {
 				<div className="text-3xl">
 					<GiCoffeeBeans />
 				</div>
-                <div className="text-lg"> <p><span className="text-2xl">🚏</span> 1234 S. Denver St, CO</p></div>
+                <div className="text-lg"> <p><span className="text-2xl">🚏</span> 1234 S. Beach St, NC</p></div>
 				<div className="text-3xl">
 					<GiCoffeeBeans />
 				</div>

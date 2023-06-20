@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import {BiCoffeeTogo} from 'react-icons/bi';
 import {GiHamburgerMenu} from 'react-icons/gi'
+import {AiFillHome} from 'react-icons/ai'
 
 const MobileNavBar = () => {
 	const [hideMobileMenu, setHideMobileMenu] = useState(true);
@@ -24,18 +25,23 @@ const MobileNavBar = () => {
                 </Link>
 
 			</div>
+            
 			{hideMobileMenu ? (
-                <div onClick={handleOpenMobileMenu} className="flex justify-around text-2xl m-1 border-t-2 border-r-2 border-stone-900 p-1 w-1/3">
+                <div onClick={handleOpenMobileMenu} className="flex justify-around text-4xl m-1 border-t-2 border-r-2 border-stone-900 p-1 w-1/3 fade-out">
                     <p className="m-auto"><GiHamburgerMenu/></p>
-					<p  className="text-4xl"><BiCoffeeTogo/></p>
-                </div>    
+					
+                </div>
                 
 			) : (
-				<div onClick={closeMobileMenu} className="flex justify-center text-xl m-1 border-t-2 border-r-2 border-stone-900 p-1 w-1/3">
+				<div onClick={closeMobileMenu} className="flex justify-around text-xl m-1 border-t-2 border-r-2 border-stone-900 p-1 w-1/3 fade-out">
+                    <div >
+                    <Link to="/" className="text-4xl m-auto"><AiFillHome/></Link>
+					</div>
 					<div >
-                    <Link to="/menu" className="text-3xl m-auto">Menu</Link>
+                    <Link to="/menu" className="text-4xl m-auto"><BiCoffeeTogo/></Link>
 					</div>
 				</div>
+                
 			)}
 		</nav>
 	);
