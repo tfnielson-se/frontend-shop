@@ -2,8 +2,8 @@
 
 ## About
 
-About: Coffee shop website, 📱 Mobile first
-Objective: Provide a simple front end work sample
+- About: Coffee shop website, 📱 Mobile first
+- Objective: Provide a simple front end work sample
 
 Technologies:
 - Vite + React (SPA / REST API) ⚛️
