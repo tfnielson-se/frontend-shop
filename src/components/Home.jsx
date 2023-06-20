@@ -24,9 +24,9 @@ const Home = () => {
 	return (
 		<AnimatePresence>
 			<motion.div
-				initial={{ opacity: 0, y: 15 }}
-				animate={{ opacity: 1, y: 0 }}
-				exit={{ opacity: 0, y: 15 }}
+				initial={{ opacity: 0, x: 100 }}
+				animate={{ opacity: 1, x: 0 }}
+				exit={{ opacity: 0, x: 15 }}
 				transition={{ delay: 0.25 }}
 			>
 				<section className="flex flex-col lg:flex-row lg:h-96">
